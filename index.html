@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Business with RAKEZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero-panel" aria-labelledby="page-title">
+            <div class="brand-mark" aria-label="RAKEZ">RAKEZ</div>
+            <p class="eyebrow">Ras Al Khaimah Economic Zone</p>
+            <h1 id="page-title">Start Your Business with RAKEZ</h1>
+            <p class="subtitle">Fill in your details and our team will get in touch.</p>
+        </section>
+
+        <section class="form-card" aria-label="Business inquiry form">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <!-- Salesforce Org ID: replace this value only if your Salesforce org changes. -->
+                <input type="hidden" name="oid" value="00Dfj00000Q6QvJ">
+
+                <!-- Replace this with the full deployed URL for thank-you.html before going live. -->
+                <input type="hidden" name="retURL" value="https://rakez-web-to-lead.vercel.app/thank-you.html">
+
+                <div class="field-grid">
+                    <div class="field">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" name="first_name" type="text" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" name="last_name" type="text" autocomplete="family-name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel">
+                    </div>
+
+                    <div class="field field-full">
+                        <label for="company">Company</label>
+                        <input id="company" name="company" type="text" autocomplete="organization" required>
+                    </div>
+
+                    <div class="field field-full">
+                        <label for="lead_source">Lead Source</label>
+                        <select id="lead_source" name="lead_source" required>
+                            <option value="">Select lead source</option>
+                            <option value="Web">Web</option>
+                            <option value="Website">Website</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Event">Event</option>
+                            <option value="Purchased List">Purchased List</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="submit-button" type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
